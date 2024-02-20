@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Х О Р О Ш О</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="center">
+        <div class="image"></div>
+        <div class="horosho">
+            <button id="myButton">Сделать хорошо</button>
+        </div>
+    </section>
+    <script>
+        const images = [
+            "Ralph.png",
+            "Wreck.png",
+        ];
+        let activeImage = 0;
+        const imageElement = document.querySelector(".image");
+        const img = document.createElement("img");
+        img.src = "./img/" + images[activeImage];
+        imageElement.append(img);
+
+        const button = document.getElementById('myButton');
+        button.onclick = function () {
+            button.textContent = 'Х О Р О Ш О!';
+            activeImage = 1;
+            img.src = "./img/" + images[activeImage];
+            imageElement.append(img);
+        };
+
+
+
+
+
+    </script>
+</body>
+
+</html>

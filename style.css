@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image img {
+    height: 300px;
+    
+}
+
+.horosho button {
+    font-size: 20px
+}
